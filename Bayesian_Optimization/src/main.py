@@ -6,6 +6,7 @@ from utils.data_preprocessing import Compas
 from classifier.GB import get_GradientBoostingClassifier
 from classifier.RF import get_RandomForestClassifier
 from utils.fairness_metric import deo
+import argparse
 
 def run_compas(model,dataset,budget=500,add_label='1'):
     def black_box_function(model,dataset,deo,x_hat):
@@ -108,4 +109,18 @@ if __name__ == '__main__':
     # model = get_GradientBoostingClassifier()
     # compas = Compas()
     # run_compas(model,compas,budget=495,add_label='1')
-    random_seed_test('gb')
+    #random_seed_test('gb')
+    parser = argparse.ArgumentParser()
+    
+    parser.add_argument("--add_label", type=str, required=False,default='1', help='1 for criminal, 0 for non-criminal')
+    parser.add_argument("--model", type=str,required=True,
+                        help='gb for Gradient Boosting classifier , rf for random forest')
+    parser.add_argument("--budget", type=int, required=False,default=495, help='Running budget')
+    args = parser.parse_args()
+    
+    add_label = args.add_label
+    budget = args.budget
+    model = args.model
+    
+    random_seed_test(kind=model,budget=budget,add_label=add_label)
+    

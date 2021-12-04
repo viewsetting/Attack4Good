@@ -1,0 +1,1 @@
+python src/main.py --model rf --budget 495 --add_label '1'
