@@ -1,6 +1,6 @@
-# Poisoning-Attacks-on-Algorithmic-Fairness
-Code and supplementary material for "Poisoning Attacks on Algorithmic Fairness", ECML 2020.
-
+# Gradient_based Fairness (Appendix)
+This code relies on the code from the paper for "Poisoning Attacks on Algorithmic Fairness", ECML 2020. 
+One can find out the linke in our reference
 Paper is available [here](https://arxiv.org/abs/2004.07401)
 
 
