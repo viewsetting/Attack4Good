@@ -10,7 +10,7 @@ For optimizing the outer problem, which is what we actually optimize, we use Bay
 
 The main experiments are in the [``Bayesian_Optimization``](./Bayesian_Optimization) folder, and the scripts necessary to run those experiments are there.
 
-We also experimented with Gradient Based optimization, which experiments are in the [``Gradient_based fairness ``](./Gradient_based fairness) folder.
+We also experimented with Gradient Based optimization, which experiments are in the [``Gradient_based fairness ``](https://github.com/viewsetting/Attack4Good/tree/main/Gradient_based%20Fairness) folder.
 
 Finally, some exploratory notebooks are in the ``notebooks`` folder.
 
