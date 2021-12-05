@@ -21,8 +21,8 @@ These are the results we obtain:
 
 
 ![scatter_RF](https://user-images.githubusercontent.com/31916524/144737209-65af5722-8334-4976-aada-339627f91810.png)
-[RF_fairness.pdf](https://github.com/viewsetting/Attack4Good/files/7655392/RF_fairness.pdf)
-[RF_acc.pdf](https://github.com/viewsetting/Attack4Good/files/7655389/RF_acc.pdf)
+![RF_fairness.pdf](https://github.com/viewsetting/Attack4Good/files/7655392/RF_fairness.pdf)
+![RF_acc.pdf](https://github.com/viewsetting/Attack4Good/files/7655389/RF_acc.pdf)
 
 
 
@@ -30,5 +30,5 @@ These are the results we obtain:
 - For the Gradient Boosting classifier used in the training loop:
 
 ![scatter_GB](https://user-images.githubusercontent.com/31916524/144737211-503c3015-ec47-44b3-bf37-3588f099a636.png)
-[GB_fairness.pdf](https://github.com/viewsetting/Attack4Good/files/7655386/GB_fairness.pdf)
-[GB_acc.pdf](https://github.com/viewsetting/Attack4Good/files/7655388/GB_acc.pdf)
+![GB_fairness.pdf](https://github.com/viewsetting/Attack4Good/files/7655386/GB_fairness.pdf)
+![GB_acc.pdf](https://github.com/viewsetting/Attack4Good/files/7655388/GB_acc.pdf)
