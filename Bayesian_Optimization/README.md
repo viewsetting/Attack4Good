@@ -38,8 +38,8 @@ Modify shell files to run experiments.
 
 Excute the command below in terminal.
 
-- Model: [ 'rf ', 'gb' ], 'rf' for random forest and 'gb' for gradient boosting
-- Budget: integer, the running time of BO
+- model: [ 'rf ', 'gb' ], 'rf' for random forest and 'gb' for gradient boosting
+- budget: integer, the running time of BO
 - add_label: the label of poison data point
 
 ```
