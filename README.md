@@ -1,4 +1,4 @@
-# Attack4Good: Poison attack for improving fairness metric
+# Attack4Good: Black-box Data Poisoning for Fairness
 
 This is the repository of the final project of MBZUAI ML701 Machine Learning.
 
