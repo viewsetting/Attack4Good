@@ -12,7 +12,7 @@ The main experiments are in the [``Bayesian_Optimization``](./Bayesian_Optimizat
 
 We also experimented with Gradient Based optimization, which experiments are in the [``Gradient_based fairness ``](https://github.com/viewsetting/Attack4Good/tree/main/Gradient_based%20Fairness) folder.
 
-Finally, some exploratory notebooks are in the ``notebooks`` folder.
+Finally, some exploratory notebooks are in the [``notebooks``](./notebooks) folder.
 
 
 These are the results we obtain: 
