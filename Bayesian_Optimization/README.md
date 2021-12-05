@@ -12,7 +12,7 @@ numpy, scipy, seaborn, matplotlib, scikit-learn, pandas, bayesian_optimization
 
 ```
 .
-├── README.md
+├── README.md   // README file
 ├── run_gb.sh	// shell script of gradient boosting
 ├── run_rf.sh	// shell script of random forest
 └── src 
@@ -22,10 +22,10 @@ numpy, scipy, seaborn, matplotlib, scikit-learn, pandas, bayesian_optimization
     │   ├── LR.py	
     │   ├── RF.py	
     ├── main.py		// main functions (random_seed_test(), run_compas())
-    ├── utils		//utility for BO
-    │   ├── data_preprocessing.py	//	class of Compas
+    ├── utils		// utility for BO
+    │   ├── data_preprocessing.py	// class of Compas
     │   └── fairness_metric.py		// several metrics for fairness
-    └── vanilla_BO.py				// implementation of vanilla BO (VanillaBO) and run_vanillabo()
+    └── vanilla_BO.py				// implementation of vanilla BO (VanillaBO) and function of iterative attack: run_vanillabo()
 ```
 
 
