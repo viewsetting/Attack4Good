@@ -1,22 +1,11 @@
 # Gradient_based Fairness (Appendix)
 This code relies on the code from the paper for "Poisoning Attacks on Algorithmic Fairness", ECML 2020. 
-One can find out the linke in our reference
-Paper is available [here](https://arxiv.org/abs/2004.07401)
+One can find out the link in our reference 
+(https://arxiv.org/abs/2004.07401)
 
 
 ## Introduction
-
-This work introduces an optimization framework to
-craft poisoning samples that against Algorithmic fairness, in particular, the implemented functions are prepared to create new samples that compromise the disparate impact metric and all the ones correlated with it. 
-
-Example of performance:
-Origianl decision boundary |  Decision boundary after the attack
-:-------------------------:|:-------------------------:
-![](https://github.com/dsolanno/Poisoning-Attacks-on-Algorithmic-Fairness/blob/master/SecML/fairness/original_boundary.png)  |  ![](https://github.com/dsolanno/Poisoning-Attacks-on-Algorithmic-Fairness/blob/master/SecML/fairness/modified_boundary.png)
-
-We perform experiments in two scenarios: 
-* a “black-box” attack in which the attacker only has access to a set of data sampled from the same distribution as the original training data, but not the model nor the original training set, 
-* and a “white-box” scenario in which the attacker has full access to both.
+We followed the method of the paper above which implemented fairness attack through gradient-based update way. By changing the optimization objective and constraint, we aimed at improving the fairness of thetrained classifier. The detailed description can be found out in Appendix of our report.
 
 Code is based on a fork of [SecML](https://secml.github.io/), adapted with new target functions allowing optimize the attacks against Algorithmic Fairness. 
 
