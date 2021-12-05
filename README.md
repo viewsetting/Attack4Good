@@ -21,11 +21,8 @@ These are the results we obtain:
 
 
 ![scatter_RF](https://user-images.githubusercontent.com/31916524/144737209-65af5722-8334-4976-aada-339627f91810.png)
-
-![RF_acc_page-0001](https://user-images.githubusercontent.com/31916524/144737810-3e7d5f56-7fc1-4fe5-b122-3ad31547285b.jpg)
-
-![RF_fairness_page-0001 (1)](https://user-images.githubusercontent.com/31916524/144737821-5e67200f-fb98-4ba0-855c-948726e4fd32.jpg)
-
+<img src="https://user-images.githubusercontent.com/31916524/144737810-3e7d5f56-7fc1-4fe5-b122-3ad31547285b.jpg" alt="drawing" width="200"/>
+<img src="https://user-images.githubusercontent.com/31916524/144737821-5e67200f-fb98-4ba0-855c-948726e4fd32.jpg" alt="drawing" width="200"/>
 
 - For the Gradient Boosting classifier used in the training loop:
 
