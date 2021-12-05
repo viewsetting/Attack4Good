@@ -22,13 +22,14 @@ These are the results we obtain:
 
 ![scatter_RF](https://user-images.githubusercontent.com/31916524/144737209-65af5722-8334-4976-aada-339627f91810.png)
 
-![RF_acc_page-0001](https://user-images.githubusercontent.com/31916524/144737810-3e7d5f56-7fc1-4fe5-b122-3ad31547285b.jpg =100x20)
+![RF_acc_page-0001](https://user-images.githubusercontent.com/31916524/144737810-3e7d5f56-7fc1-4fe5-b122-3ad31547285b.jpg)
 
-![RF_fairness_page-0001 (1)](https://user-images.githubusercontent.com/31916524/144737821-5e67200f-fb98-4ba0-855c-948726e4fd32.jpg =100x20)
+![RF_fairness_page-0001 (1)](https://user-images.githubusercontent.com/31916524/144737821-5e67200f-fb98-4ba0-855c-948726e4fd32.jpg)
 
 
 - For the Gradient Boosting classifier used in the training loop:
 
-![scatter_GB](https://user-images.githubusercontent.com/31916524/144737211-503c3015-ec47-44b3-bf37-3588f099a636.png =100x20)
-![GB_fairness_page-0001](https://user-images.githubusercontent.com/31916524/144737829-80445b6d-af6c-46e8-bc2c-b7cae0c75c7e.jpg =100x20)
-![GB_acc_page-0001](https://user-images.githubusercontent.com/31916524/144737830-8db88b3c-1f7f-4454-847b-23bffbb1c7db.jpg =100x20)
+![scatter_GB](https://user-images.githubusercontent.com/31916524/144737211-503c3015-ec47-44b3-bf37-3588f099a636.png)
+<img src="https://user-images.githubusercontent.com/31916524/144737829-80445b6d-af6c-46e8-bc2c-b7cae0c75c7e.jpg" alt="drawing" width="200"/>
+<img src="https://user-images.githubusercontent.com/31916524/144737830-8db88b3c-1f7f-4454-847b-23bffbb1c7db.jpg" alt="drawing" width="200"/>
+
