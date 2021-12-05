@@ -13,11 +13,9 @@ Code is based on a fork of [SecML](https://secml.github.io/), adapted with new t
 
 The main code is contained in the folder [*SecML/fairness*](https://github.com/dsolanno/Poisoning-Attacks-on-Algorithmic-Fairness/tree/master/SecML/fairness) where there are three main sources:
 
-* First, there is a Python script, used to validate that the implemented function effectivelly attacks the disparate impact metric in a toy scenario.
+* First, there is a Python scripts called Ourdemo.py to implement the attack towards fairness on dataset COMPAS.
 
-* Second, there is a Python notebook containing the code for the experiments done on the synthetic dataset explained in the paper
-
-* Third, there is another notebook containing the experiments on a real-world dataset.
+* Second, there are output images showing the result of attack.
 
 
 To add new Algorithmic Fairness functions to target, new losses can be added to the [loss](https://github.com/dsolanno/Poisoning-Attacks-on-Algorithmic-Fairness/tree/master/SecML/src/secml/ml/classifiers/loss) folder. Also, experiments with other datasets are welcome!
