@@ -12,7 +12,7 @@ The main experiments are in the ``Bayesian_Optimization`` folder, and the script
 
 We also experimented with Gradient Based optimization, which experiments are in the ``Gradient_based fairness `` folder.
 
-Finally, some exploratory notebooks are in the ``notebooks folder``.
+Finally, some exploratory notebooks are in the ``notebooks`` folder.
 
 
 These are the results we obtain: 
