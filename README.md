@@ -31,4 +31,4 @@ These are the results we obtain:
 
 ![scatter_GB](https://user-images.githubusercontent.com/31916524/144737211-503c3015-ec47-44b3-bf37-3588f099a636.png)
 ![GB_fairness.pdf](https://github.com/viewsetting/Attack4Good/files/7655386/GB_fairness.pdf)
-![GB_acc.pdf](https://github.com/viewsetting/Attack4Good/files/7655388/GB_acc.pdf)
+ ![GB_acc.pdf](https://github.com/viewsetting/Attack4Good/files/7655388/GB_acc.pdf)
