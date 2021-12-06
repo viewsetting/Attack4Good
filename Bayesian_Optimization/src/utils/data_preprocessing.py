@@ -3,6 +3,8 @@ from sklearn.datasets import fetch_openml
 from sklearn.model_selection import train_test_split
 
 class Compas:
+    """[class of COMPAS dataset]
+    """
     def __init__(self, shuffle=True,
                        test_size=0.2,
                        valid_size=0.1,
@@ -94,6 +96,12 @@ class Compas:
 
     
     def add_data(self,max_param,label='1'):
+        """[add poisoned data]
+
+        Args:
+            max_param ([type]): [max_param of BO]
+            label (str, optional): [description]. Defaults to '1'.
+        """
         print('Poinson data ADDED')
         print('feature: ',max_param.keys())
         np_max_param = self.to_numpy_x_hat(max_param)

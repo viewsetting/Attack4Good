@@ -8,8 +8,28 @@ from classifier.RF import get_RandomForestClassifier
 from utils.fairness_metric import deo
 import argparse
 
+
 def run_compas(model,dataset,budget=500,add_label='1'):
+    """[run compas dataset]
+
+    Args:
+        model ([sklearn model]): [model of scikit-learn]
+        dataset ([dataset(compas)]): [class of COMPAS]
+        budget (int, optional): [the budget of BO]. Defaults to 500.
+        add_label (str, optional): [the label of poison data to add]. Defaults to '1'.
+    """
     def black_box_function(model,dataset,deo,x_hat):
+        """[inner function of BO]
+
+        Args:
+            model ([sklearn model]): [model of scikit-learn]
+            dataset ([dataset(compas)]): [class of COMPAS]
+            deo ([function]): [metric of fairness]
+            x_hat ([numpy.ndarray]): [array of poinson data]
+
+        Returns:
+            [float]: [score of fairness metric]
+        """
         #dataset.add_data(x_hat,label=add_label)
         x_train,y_train = dataset.get_train(False)
         x_val,y_val = dataset.get_valid(True)
@@ -24,9 +44,33 @@ def run_compas(model,dataset,budget=500,add_label='1'):
         #aug
         #deo_val = deo_aug(y,y_val,x_val)
         return deo_val
+    
     def discrete_input(model,dataset,deo,sex,age,juv_fel_count,juv_misd_count,juv_other_count,
                     priors_count, age_cat_25_45,age_cat_Greaterthan45,
                     age_cat_Lessthan25,race_African_American,race_Caucasian,c_charge_degree_F,c_charge_degree_M):
+        """[transform some continuous variables into categorical]
+
+        Args:
+            model ([sklearn model]): [model of scikit-learn]
+            dataset ([dataset(compas)]): [class of COMPAS]
+            deo ([function]): [metric of fairness]
+            sex ([float]): [sex, 0 for male, 1 for female]
+            age ([float]): [age]
+            juv_fel_count ([float]): [count of felonies]
+            juv_misd_count ([float]): [juv_misd_count]
+            juv_other_count ([float]): [juv_other_count]
+            priors_count ([float]): [total crimes commited before]
+            age_cat_25_45 ([float]): [if age beween 25 and 45]
+            age_cat_Greaterthan45 ([float]): [if age more than 45]
+            age_cat_Lessthan25 ([float]): [if age less than 25]
+            race_African_American ([float]): [if African American]
+            race_Caucasian ([float]): [if Caucasian]
+            c_charge_degree_F ([float]): [c_charge_degree_F]
+            c_charge_degree_M ([float]): [c_charge_degree_M]
+
+        Returns:
+            [function]: [blackbox evaluate function]
+        """
         sex = str(round(sex))
         age = float(round(age))
         juv_fel_count = float(round(juv_fel_count))
@@ -77,7 +121,7 @@ def run_compas(model,dataset,budget=500,add_label='1'):
     target = deo(y,y_val,x_val)
     
     
-    #run_vanillabo(model,dataset=compas,bb_function=discrete_input,add_label='1',pre_target=-10000,budget=1)
+    #inner loop
     while(budget>=0):
         compas, run_time,target = run_vanillabo(model,dataset=compas,bb_function=discrete_input,add_label=add_label,pre_target=target, budget=budget,)
         
@@ -91,6 +135,16 @@ def run_compas(model,dataset,budget=500,add_label='1'):
     pass
 
 def random_seed_test(kind,budget=495,add_label='1'):
+    """[run by setting a list of seeds as initialization]
+
+    Args:
+        kind ([str]): ['gb': gradient boost, 'rf': random forest]
+        budget (int, optional): [total budget of BO]. Defaults to 495.
+        add_label (str, optional): [the label of poison data to add]. Defaults to '1'.
+
+    Raises:
+        NotImplementedError: [if the model is not included]
+    """
     random_seed = [(x^3-2*x+1)%10007 for x in range(1000,1000+50)]
     
     for seed in random_seed:

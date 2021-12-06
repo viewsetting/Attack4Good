@@ -5,12 +5,30 @@ from base import BaseBO
 from utils.fairness_metric import deo
 
 def get_utility_function(kind="ucb"):
+    """[get utility function]
+
+    Args:
+        kind (str, optional): [utility function]. Defaults to "ucb".
+
+    Returns:
+        [UtilityFunction]: [UtilityFunction]
+    """
     if kind == "ucb":
         return UtilityFunction(kind="ucb", kappa=2.5, xi=0.0)
     else:
         return NotImplementedError
 
 def get_vanilla_BO(utility_function,evaluation,p_bound):
+    """[get VanillaBO]
+
+    Args:
+        utility_function ([UtilityFunction]): [UtilityFunction]
+        evaluation ([function]): [function of evaluation]
+        p_bound ([dict]): [p_bound]
+
+    Returns:
+        [VanillaBO]: [VanillaBO]
+    """
     return VanillaBO(
     utility_function,
     evaluation,
@@ -19,6 +37,11 @@ def get_vanilla_BO(utility_function,evaluation,p_bound):
 )
 
 class VanillaBO(BaseBO):
+    """[VanillaBO]
+
+    Args:
+        BaseBO ([BaseBO]): [base of Bayesian Optimization]
+    """
     def __init__(self,acq_function,evaluation,pbounds,random_state=1):
         BaseBO.__init__(self,acq_function=acq_function,evaluation=evaluation)
         self.optimizer = BayesianOptimization(  f = evaluation,
@@ -27,6 +50,19 @@ class VanillaBO(BaseBO):
                                                     random_state=random_state,)
 
 def run_vanillabo(model,dataset,bb_function,add_label,pre_target,budget):
+    """[run vanillabo]
+
+    Args:
+        model ([sklearn model]): [model of scikit-learn]
+        dataset ([dataset]): [class of dataset]
+        bb_function ([function]): [blackbox evaluation]
+        add_label (str, optional): [the label of poison data to add]
+        pre_target ([float]): [previous target of fairness metric]
+        budget (int, optional): [the budget of BO]. 
+
+    Returns:
+        [dataset,cnt,target]: [poisoned dataset, budget that has been used in inner loop, new best fairness metric value]
+    """
 
     utility = get_utility_function(kind="ucb")
     cnt = 0
