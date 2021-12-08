@@ -1,6 +1,8 @@
 # Attack4Good: Black-box Data Poisoning for Fairness
 ![alt text](https://mbzuai.ac.ae/application/themes/mbzuai/dist/images/mbzuai_logo.png)
 
+By Zhenhao Chen, William de Vazelhes, Boyang Sun
+
 This is the repository of the final project of MBZUAI ML701 Machine Learning.
 
 We generate poisonous examples **such that** the model, trained on the trainset augmented with those poisonous examples, will be more fair. As any kind of poisonous attacks, this can be formulated as the following bi-level optimization problem, where `h` is the variable we want to optimize, `w` is the variable that is optimized by the inner optimization problem, with `w*` being the optimal value for that problem, and `f` and `g` are two functions.
