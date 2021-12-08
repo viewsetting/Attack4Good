@@ -3,6 +3,7 @@
 
 By Zhenhao Chen, William de Vazelhes, Boyang Sun
 
+## Introduction
 This is the repository of the final project of MBZUAI ML701 Machine Learning.
 
 We generate poisonous examples **such that** the model, trained on the trainset augmented with those poisonous examples, will be more fair. As any kind of poisonous attacks, this can be formulated as the following bi-level optimization problem, where `h` is the variable we want to optimize, `w` is the variable that is optimized by the inner optimization problem, with `w*` being the optimal value for that problem, and `f` and `g` are two functions.
@@ -11,10 +12,12 @@ We generate poisonous examples **such that** the model, trained on the trainset 
 
 For optimizing the outer problem, which is what we actually optimize, we use Bayesian Optimization (it is the algorithms that we tuned). For the inner problem, we use a method that is supposed to represent a typical training algorithm used by some third party, so it is not used and uses default hyparameters values. Typically we use a Random Forest and a Gradient Boosting Algorithm, both of which can be chosen as parameter when running the experiments scripts.
 
+## Project Architecture
 The main experiments are in the [``Bayesian_Optimization``](./Bayesian_Optimization) folder, and the scripts necessary to run those experiments are there.
 
 We also experimented with Gradient Based optimization, which experiments are in the [``Gradient_based fairness ``](https://github.com/viewsetting/Attack4Good/tree/main/Gradient_based%20Fairness) folder.
 
+### Dataset exploration, demo & result analysis
 Finally, some exploratory notebooks are in the [``notebooks``](./notebooks) folder.
 
 
