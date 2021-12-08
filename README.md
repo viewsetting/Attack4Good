@@ -1,4 +1,5 @@
 # Attack4Good: Black-box Data Poisoning for Fairness
+![alt text](https://mbzuai.ac.ae/application/themes/mbzuai/dist/images/mbzuai_logo.png)
 
 This is the repository of the final project of MBZUAI ML701 Machine Learning.
 
