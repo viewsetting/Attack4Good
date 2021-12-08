@@ -1,7 +1,7 @@
 # Attack4Good: Black-box Data Poisoning for Fairness
 ![alt text](https://mbzuai.ac.ae/application/themes/mbzuai/dist/images/mbzuai_logo.png)
 
-By Zhenhao Chen, William de Vazelhes and Boyang Sun (**equal contribution**)
+By Zhenhao Chen, William de Vazelhes and Boyang Sun. (**Equal contribution**)
 
 ## Introduction
 This is the repository of the final project of MBZUAI ML701 Machine Learning.
