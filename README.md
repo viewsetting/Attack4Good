@@ -37,7 +37,7 @@ These are the results we obtain:
 <img src="https://user-images.githubusercontent.com/31916524/144737830-8db88b3c-1f7f-4454-847b-23bffbb1c7db.jpg" alt="drawing" width="400"/>
 
 ## Work division
-We equally divided the tasks between us, in the following way:
+This work is divided qually between us, in the following way:
 - Zhenhao Chen: Full experiments with [Bayesian_optimization](./Bayesian_Optimization), writing of the Experiments section on Bayesian Optimization, some modifications in the manuscript, review of the final manuscript
 - William de Vazelhes: Minimal running example on a toy problem (using some existing code for BO), writing of a first draft of the manuscript (except experiments section), some modifications in the manuscript, review of the final manuscript
 - Boyang Sun: Full experiments with [Gradient based method](https://github.com/viewsetting/Attack4Good/tree/main/Gradient_based%20Fairness), writing of the Experiments section on it, some modifications in the manuscript, review of the final manuscript
