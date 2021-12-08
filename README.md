@@ -1,7 +1,7 @@
 # Attack4Good: Black-box Data Poisoning for Fairness
 ![alt text](https://mbzuai.ac.ae/application/themes/mbzuai/dist/images/mbzuai_logo.png)
 
-By Zhenhao Chen, William de Vazelhes, Boyang Sun
+By Zhenhao Chen, William de Vazelhes and Boyang Sun (**equal contribution**)
 
 ## Introduction
 This is the repository of the final project of MBZUAI ML701 Machine Learning.
@@ -36,3 +36,8 @@ These are the results we obtain:
 <img src="https://user-images.githubusercontent.com/31916524/144737829-80445b6d-af6c-46e8-bc2c-b7cae0c75c7e.jpg" alt="drawing" width="400"/>
 <img src="https://user-images.githubusercontent.com/31916524/144737830-8db88b3c-1f7f-4454-847b-23bffbb1c7db.jpg" alt="drawing" width="400"/>
 
+## Work division
+We equally divided the tasks between us, in the following way:
+• Zhenhao Chen: Full experiments with Bayesian optimization, writing of the Experiments section on Bayesian Optimization, some modifications in the manuscript, review of the final manuscript
+• Boyang Sun: Full experiments with Gradient based method, writing of the Experiments section on it, some modifications in the manuscript, review of the final manuscript
+• William de Vazelhes: Minimal running example on a toy problem (using some existing code for BO), writing of a first draft of the manuscript (except experiments section), some modifications in the manuscript, review of the final manuscript
