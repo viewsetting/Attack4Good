@@ -1,5 +1,5 @@
 # Attack4Good: Black-box Data Poisoning for Fairness
-![alt text](https://mbzmfg.com/Portals/0/adam/Content/LA_fnkoF4EagpIo1YvuItw/Image/MBZUAI_FullName_Bilingual_Screen_RGB.png?w=1080&scale=both&quality=50)
+![alt text](https://mbzmfg.com/Portals/0/adam/Content/LA_fnkoF4EagpIo1YvuItw/Image/MBZUAI_FullName_Bilingual_Screen_RGB.png?w=1080&scale=both&quality=20)
 
 By Zhenhao Chen, William de Vazelhes and Boyang Sun. (**Equal contribution**)
 
